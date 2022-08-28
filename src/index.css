@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .preloading-dot {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .preloading-dot:nth-of-type(1) {
+    animation: preloader 0.6s ease-in-out alternate infinite;
+  }
+  .preloading-dot:nth-of-type(2) {
+    animation: preloader 0.6s ease-in-out alternate 0.2s infinite;
+  }
+  .preloading-dot:nth-of-type(3) {
+    animation: preloader 0.6s ease-in-out alternate 0.4s infinite;
+  }
+
+  @keyframes preloader {
+    100% {
+      transform: scale(2);
+    }
+  }
+}
+
+@layer components {
+  .preloading-dot {
+    @apply bg-mainBgColor2 dark:bg-mainBgColor;
+  }
+  li {
+    @apply list-none cursor-pointer;
+  }
+  .btn-link {
+    @apply py-2 px-2 rounded-sm md:rounded-[4px] bg-mainElementColor dark:bg-mainElementColor2 shadow-[0px_0px_8px_-2px_rgba(0,0,0,0.4)];
+  }
+  body {
+    @apply font-NunitoSans dark:bg-mainBgColor2 dark:text-mainTextColor2 bg-mainBgColor text-mainTextColor w-[100%];
+  }
+  .pagination-lists {
+    @apply p-[2px] border-[1px] rounded-md flex items-center justify-center shadow-[0px_0px_8px_-2px_rgba(0,0,0,0.4)];
+  }
+  .active-pagination-lists {
+    @apply bg-mainTextColor dark:bg-mainTextColor2 text-mainBgColor dark:text-mainBgColor2 ease-in transition-all duration-75;
+  }
+}
+
+@layer utilities {
+  .active-region-container {
+    @apply flex;
+  }
+}
