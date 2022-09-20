@@ -34,7 +34,7 @@ const InputAndFilter = ({ countriesPerPage, currentPageNo, setCurrentPageNo }) =
         <div
           className="flex dark:bg-mainElementColor2 bg-mainElementColor justify-between h-14 rounded-md shadow-[0.5px_2px_32px_-2px_rgba(0,0,0,0.1)] items-center px-[10%] cursor-pointer"
           onClick={(e) => {
-            e.currentTarget.nextElementSibling.classNameList.toggle("active-region-container");
+            e.currentTarget.nextElementSibling.classList.toggle("active-region-container");
           }}
         >
           <h2>{currentRegionContainerHeader}</h2>
