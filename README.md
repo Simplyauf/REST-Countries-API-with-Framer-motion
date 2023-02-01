@@ -2,12 +2,13 @@
 A solution to the IP address tracker challenge on Frontend Mentor, this project is a platform that displays data of countries and allows users to search, filter, and sort through this data.
 
 ## Inspiration
-This project was inspired by the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This project was inspired by the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges//rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Key Features
 - Search functionality for countries data
 - Filter and sorting functionality for countries data
 - User-friendly interface with animations using Framer Motion
+- Theme switcher(manually and also automatically based on system setting)
 
 ## Screenshots & Gifs
 <div s>
