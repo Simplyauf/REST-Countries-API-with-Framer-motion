@@ -25,7 +25,7 @@ export const DetailsOfSingleCountry = () => {
   if (isLoading) {
     return <Loading />;
   } else {
-    const { name, population, region, flags, capital, currencies, languages, subregion, tld, borders } =
+    const { name, population, region, flags, capital, currencies, languages, subregion, tld, } =
       selectedCountry;
     const { nativeName } = name;
     return (
@@ -100,7 +100,7 @@ export const DetailsOfSingleCountry = () => {
               <div className="flex-col flex gap-6 lg:flex-row">
                 <h2 className="font-semibold text-lg lg:basis-[40%]">Border Countries:</h2>
                 <ul className="flex gap-4 items-center flex-wrap pr-6">
-                  {borders.map((borderCountry, index) => {
+                  {selectedCountry?.borders && selectedCountry.borders.map((borderCountry, index) => {
                     let borderCountryName = countriesData.find((countryData) => {
                       return countryData.cca3 === borderCountry;
                     });
